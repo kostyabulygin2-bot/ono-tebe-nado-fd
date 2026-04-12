@@ -1,5 +1,5 @@
 .header {
-  padding: 94px 50px;
+  padding: 92px 50px 96px 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -20,7 +20,6 @@
   flex-direction: row;
   gap: 32.6px;
   list-style: circle;
-  text-underline-offset: 0.2em;
 }
 
 .header__links-list-item {
@@ -31,6 +30,14 @@
 
 .header__links-list-item_no-bullit {
   list-style: none;
+}
+
+.header__link {
+  text-underline-offset: 0.17em;
+}
+
+.header__link_active {
+  text-decoration: none;
 }
 
 .address {
@@ -50,12 +57,91 @@
 }
 
 .cover {
+  position: relative;
+  z-index: -2;
   padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   color: #fff;
   min-height: 757px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: #000;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-transform: uppercase;
+  padding-bottom: 106px;
+}
+
+.aligned-text {
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 114.99999999999999%;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
+
+.aligned-text_left {
+  align-self: flex-start;
+  width: 286px;
+  height: 115px;
+}
+
+.aligned-text_center {
+  align-self: center;
+  width: 339px;
+  height: 115px;
+}
+
+.aligned-text_right {
+  align-self: flex-end;
+  width: 387px;
+  height: 115px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+text-transform: uppercase;
+}
+
+.cover__description-text {
+  align-self: center;
+  word-spacing: 18.5px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.bet-button {
+  all: unset;
+  width: 256px;
+  height: 51px;
+  border: #fff solid 1px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 100%;
 }
 
 .lots {
