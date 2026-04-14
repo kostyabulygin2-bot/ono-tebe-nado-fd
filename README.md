@@ -1,1 +1,1 @@
-https://github.com/kostyabulygin2-bot/ono-tebe-nado-fd#
+https://github.com/kostyabulygin2-bot/ono-tebe-nado-fd
