@@ -1,3 +1,6 @@
+
+/* ШАПКА */
+
 .header {
   padding: 92px 50px 96px 50px;
   display: grid;
@@ -33,7 +36,7 @@
 }
 
 .header__link {
-  text-underline-offset: 0.17em;
+  text-underline-offset: .17em;
 }
 
 .header__link_active {
@@ -45,7 +48,7 @@
   font-size: 18px;
   line-height: 24.3px;
   font-style: normal;
-  text-underline-offset: 0.2em;
+  text-underline-offset: .2em;
 }
 
 .header__address {
@@ -59,6 +62,8 @@
 .address__text-nowrap {
   white-space: nowrap;
 }
+
+/* СЕКЦИЯ COVER */
 
 .cover {
   position: relative;
@@ -103,20 +108,16 @@
 
 .aligned-text_left {
   align-self: flex-start;
-  width: 286px;
-  height: 115px;
 }
 
 .aligned-text_center {
   align-self: center;
-  width: 339px;
-  height: 115px;
+  margin-top: 2px;
+  margin-left: 30px;
 }
 
 .aligned-text_right {
   align-self: flex-end;
-  width: 387px;
-  height: 115px;
 }
 
 .no-letter-spacing {
@@ -124,10 +125,10 @@
 }
 
 .cover__description {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
 }
 
 .cover__description-text {
@@ -151,9 +152,11 @@ text-transform: uppercase;
   line-height: 100%;
 }
 
+/* СЕКЦИЯ LOTS */
+
 .lots {
   padding: 0 24px 0 24px;
-  margin-bottom: 120px;
+  margin-bottom: 154px;
 }
 
 .lots__heading {
@@ -190,27 +193,21 @@ text-transform: uppercase;
   padding: 48px 40px;
   height: 100%;
   color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .card__title {
@@ -220,7 +217,7 @@ text-transform: uppercase;
   line-height: 120%;
   text-decoration-style: solid;
   text-decoration: underline #fff;
-  text-underline-offset: 0.13em;
+  text-underline-offset: .13em;
   text-transform: uppercase;
 }
 
@@ -232,20 +229,17 @@ text-transform: uppercase;
   line-height: 120%;
 }
 
-.wrapper__look-more-link {
-  height: 53px;
-  position: relative;
-}
-
 .lots__look-more-link {
-  position: absolute;
-  padding-top: 32px;
+  position: relative;
+  top: 32px;
   padding-left: 40px;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
-  text-underline-offset: 0.22em;
+  text-underline-offset: .22em;
 }
+
+/* СЕКЦИЯ ABOUT */
 
 .about {
   padding: 35px 24px 0 24px;
@@ -253,7 +247,6 @@ text-transform: uppercase;
   display: grid;
   grid-template-columns: 334px 1fr;
   gap: 25px;
-  min-height: 595px;
 }
 
 .about__column {
@@ -299,6 +292,8 @@ text-transform: uppercase;
   line-height: 24px;
 }
 
+/* ПОДВАЛ */
+
 .footer {
   padding: 0 50px 82px 50px;
   display: grid;
@@ -315,7 +310,6 @@ text-transform: uppercase;
 
 .footer__menu {
   min-width: 164px;
-  padding-top: 2px;
 }
 
 .footer__menu-list {
@@ -331,6 +325,10 @@ text-transform: uppercase;
   font-weight: 400;
   font-size: 18px;
   line-height: 100%;
+}
+
+.footer__menu-link {
+  text-underline-offset: .2em;
 }
 
 .footer__menu-link_active {
